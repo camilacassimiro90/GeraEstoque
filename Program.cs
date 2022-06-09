@@ -20,6 +20,23 @@
 Digite a opção:";
 
       System.Console.WriteLine(opcoes);
+
+// aqui vai o switch
+    // var opcao = byte.Parse(Console.ReadLine());
+    // switch (opcao)
+    // {
+    //   case 1: cadastrarProduto(); break;
+    //   case 2: consultarProduto(); break;
+    //   case 3: modificarProduto(); break;
+    //   case 4: excluirProduto(); break;
+    //   case 0: sair(); break;
+
+    //   default: menu()break;
+    // }
+
+     
     }
+    //  cadastrarProduto();
   }
 }
+ 
