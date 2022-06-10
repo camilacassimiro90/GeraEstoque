@@ -10,30 +10,43 @@
 ------------------------------------";
       System.Console.WriteLine(titulo);
 
+      mostrarOpcoes();
+
+    }
+
+    public static void mostrarOpcoes()
+    {
       string opcoes =
-      @"1 Cadastrar produto
+@"1 Cadastrar produto
 2 Consultar produto
 3 Modificar produto
 4 Excluir produto
-0 Sair
-      
-Digite a opção:";
+0 Sair";
 
       System.Console.WriteLine(opcoes);
+      System.Console.WriteLine("Digite uma opção");
+      CadastrarProduto();
+
+      Console.ReadLine();
 
     }
-    public static void CadastrarProduto();
+    public static void CadastrarProduto()
     {
-      var opcao = short.Parse(Console.ReadLine());
+      // System.Console.WriteLine("Digite uma opção");
+      var opcao = Console.ReadLine();
+
+      // Console.WriteLine("Digite uma opção");
+
 
       switch (opcao)
       {
-        case 1: Program.CadastrarProduto; break;
-        default: Console.WriteLine(opcoes); break;
+        case 1: Program.CadastrarProduto(); break;
+        default: mostrarOpcoes(); break;
       }
 
-      Console.ReadLine()
+      Console.ReadLine(opcao);
+      mostrarOpcoes();
     }
+  }
+}
 
-}
-}
