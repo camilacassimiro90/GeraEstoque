@@ -76,7 +76,7 @@
       Console.WriteLine($"id: {id}");
 
     }
-    static void criaGuid()
+    static void criarGuid()
     {
       Guid guid = Guid.NewGuid();
     }
