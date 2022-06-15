@@ -1,4 +1,4 @@
-// using GeraEstoque
+using GeraEstoque;
 namespace GeraEstoque.Screens
 {
   public static class MenuScreen
@@ -9,13 +9,13 @@ namespace GeraEstoque.Screens
 @"Seja bem vindo(a) ao GeraEstoque 1.0
 ------------------------------------";
       System.Console.WriteLine(titulo);
-      MostrarOpcoes();
+      Program.MostrarOpcoes();
       var opcao = short.Parse(Console.ReadLine());
 
       switch (opcao)
       {
         case 1: CadastrarProduto(); break;
-        default: MostrarOpcoes(); break;
+        default: Program.MostrarOpcoes(); break;
       };
     }
     public static void CadastrarProduto()
