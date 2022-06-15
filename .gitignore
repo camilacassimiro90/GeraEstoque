@@ -1,5 +1,4 @@
-# txt
-# .vscode
-# bin
-# obj/Debug
-# **/*.cache
+.vscode
+bin
+obj/Debug
+**/*.cache
