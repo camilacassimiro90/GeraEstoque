@@ -1,4 +1,3 @@
-using GeraEstoque;
 namespace GeraEstoque.Screens
 {
   public static class MenuScreen
@@ -14,57 +13,53 @@ namespace GeraEstoque.Screens
 
       switch (opcao)
       {
-        case 1: CadastrarProduto(); break;
+        case 1: CriarProdutoScreen.Iniciar(); Iniciar(); break;
         default: Program.MostrarOpcoes(); break;
       };
     }
-    public static void CadastrarProduto()
-    {
-      string id;
-      string descricao;
-      int quantidade;
-      double valorCompra;
-      double valorVenda;
-      char continua = 'S';
-      Guid guid = Guid.NewGuid();
+    // public static void CadastrarProduto()
+    // {
+    //   string id;
+    //   string descricao;
+    //   int quantidade;
+    //   double valorCompra;
+    //   double valorVenda;
+    //   char continua = 'S';
+    //   Guid guid = Guid.NewGuid();
 
-      do
-      {
+    //   do
+    //   {
+    //     Console.WriteLine("Cadastramento");
 
-        Console.WriteLine("Cadastramento");
+    //     Console.WriteLine("Insira a descrição do produto:");
+    //     descricao = Console.ReadLine();
 
-        Console.WriteLine("Insira a descrição do produto:");
-        descricao = Console.ReadLine();
+    //     Console.WriteLine("Insira a quantidade:");
+    //     quantidade = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("Insira a quantidade:");
-        quantidade = int.Parse(Console.ReadLine());
+    //     Console.WriteLine("insira o valor de compra:");
+    //     valorCompra = double.Parse(Console.ReadLine());
 
-        Console.WriteLine("insira o valor de compra:");
-        valorCompra = double.Parse(Console.ReadLine());
+    //     Console.WriteLine("insira o valor de venda:");
+    //     valorVenda = double.Parse(Console.ReadLine());
 
-        Console.WriteLine("insira o valor de venda:");
-        valorVenda = double.Parse(Console.ReadLine());
+    //     Console.WriteLine("Deseja continuar? (S/N)");
+    //     continua = Convert.ToChar(Console.ReadLine());
 
-        Console.WriteLine("Deseja continuar? (S/N)");
-        continua = Convert.ToChar(Console.ReadLine());
+    //     id = guid.ToString();
 
-        id = guid.ToString();
+    //   } while (continua == 'S');
 
-      } while (continua == 'S');
+    //   Console.Clear();
 
-      Console.Clear();
+    //   Console.WriteLine("Produto cadastrado com sucesso!");
 
-      Console.WriteLine("Produto cadastrado com sucesso!");
-
-      Console.WriteLine($"Nome: {descricao}");
-      Console.WriteLine($"Quantidade: {quantidade}");
-      Console.WriteLine($"{valorCompra}");
-      Console.WriteLine($"{valorVenda}");
-      Console.WriteLine($"id: {id}");
-
-    }
-
+    //   Console.WriteLine($"Nome: {descricao}");
+    //   Console.WriteLine($"Quantidade: {quantidade}");
+    //   Console.WriteLine($"{valorCompra}");
+    //   Console.WriteLine($"{valorVenda}");
+    //   Console.WriteLine($"id: {id}");
+    // }
   }
-
 }
 
