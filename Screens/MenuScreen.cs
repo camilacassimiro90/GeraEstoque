@@ -1,10 +1,9 @@
 using GeraEstoque.Repositories;
 
-namespace GeraEstoque.Screens
-{
+namespace GeraEstoque.Screens;
   public static class MenuScreen
   {
-    public static void Iniciar()
+    public static void Iniciar(ProdutoRepository repository)
     {
       Console.Clear();
 
@@ -30,5 +29,5 @@ namespace GeraEstoque.Screens
       };
     }
   }
-}
+
 
