@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\Camila\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\servidor\\dados\\OneDrive\\Camila\\Senai-Curso\\M2S02\\GeraEstoque\\GeraEstoque.csproj",
+      "projectUniqueName": "C:\\Users\\Camila\\Documents\\Devinhouse\\GeraEstoque\\GeraEstoque.csproj",
       "projectName": "GeraEstoque",
-      "projectPath": "\\\\servidor\\dados\\OneDrive\\Camila\\Senai-Curso\\M2S02\\GeraEstoque\\GeraEstoque.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "\\\\servidor\\dados\\OneDrive\\Camila\\Senai-Curso\\M2S02\\GeraEstoque\\obj\\",
+      "projectPath": "C:\\Users\\Camila\\Documents\\Devinhouse\\GeraEstoque\\GeraEstoque.csproj",
+      "packagesPath": "C:\\Users\\Camila\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Camila\\Documents\\Devinhouse\\GeraEstoque\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Camila\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

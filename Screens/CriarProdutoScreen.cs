@@ -1,54 +1,31 @@
+using GeraEstoque.Repositories;
+using GeraEstoque.Models;
+
 namespace GeraEstoque.Screens
 {
   public static class CriarProdutoScreen
   {
     public static void Iniciar()
     {
-      CriarProdutoScreen.Iniciar();
-      {
-        string id;
-        string descricao;
-        int quantidade;
-        double valorCompra;
-        double valorVenda;
-        char continua = 'S';
-        Guid guid = Guid.NewGuid();
+      Console.Clear();
+      System.Console.Write("Nome do produto: ");
+      string nome = Console.ReadLine();
+      System.Console.Write("Quantidade em estoque: ");
+      int qtd = int.Parse(Console.ReadLine()!);
+      System.Console.Write("Valor de compra: ");
+      double valorCompra = double.Parse(Console.ReadLine()!);
+      System.Console.Write("Valor de venda: ");
+      double valorVenda = double.Parse(Console.ReadLine()!);
+      string id = Guid.NewGuid().ToString();
 
-        do
-        {
-          Console.WriteLine("Cadastramento");
-
-          Console.WriteLine("Insira a descrição do produto:");
-          descricao = Console.ReadLine();
-
-          Console.WriteLine("Insira a quantidade:");
-          quantidade = int.Parse(Console.ReadLine());
-
-          Console.WriteLine("insira o valor de compra:");
-          valorCompra = double.Parse(Console.ReadLine());
-
-          Console.WriteLine("insira o valor de venda:");
-          valorVenda = double.Parse(Console.ReadLine());
-
-          Console.WriteLine("Deseja continuar? (S/N)");
-          continua = Convert.ToChar(Console.ReadLine());
-
-          id = guid.ToString();
-
-        } while (continua == 'S');
-
-        Console.Clear();
-
-        Console.WriteLine("Produto cadastrado com sucesso!");
-
-        Console.WriteLine($"Nome: {descricao}");
-        Console.WriteLine($"Quantidade: {quantidade}");
-        Console.WriteLine($"{valorCompra}");
-        Console.WriteLine($"{valorVenda}");
-        Console.WriteLine($"id: {id}");
-      }
-
+      var produto = new Produto(nome!, qtd, valorCompra, valorVenda);
+      System.Console.WriteLine("Produto cadastrado com sucesso!");
+      repository.Produtos.Add(produto);
+      Console.ReadLine();
     }
-
+    static void criarGuid()
+    {
+      Guid guid = Guid.NewGuid();
+    }
   }
 }
